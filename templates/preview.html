@@ -1,0 +1,244 @@
+
+<!DOCTYPE HTML>
+<html lang="zxx">
+
+<head>
+	<title>Kannada Text Summarization </title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="utf-8">
+	<meta name="keywords" content="Home Loan Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template,
+SmartPhone Compatible web template, free WebDesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
+	<script>
+		addEventListener("load", function () {
+			setTimeout(hideURLbar, 0);
+		}, false);
+
+		function hideURLbar() {
+			window.scrollTo(0, 1);
+		}
+	</script>
+
+	<!-- Bootstrap Core CSS -->
+	<link href="../static/css/bootstrap.css" rel='stylesheet' type='text/css' />
+	<link href="../static/css/styles.css" rel='stylesheet' type='text/css' />
+	<!-- font-awesome icons -->
+	<link href="../static/css/fontawesome-all.min.css" rel="stylesheet">
+	<!-- //Custom Theme files -->
+	<!-- online fonts -->
+	<!-- titles -->
+	<link href="//fonts.googleapis.com/css?family=Raleway:300,400,500,600,700,800,900" rel="stylesheet">
+	<!-- body -->
+	<link href="//fonts.googleapis.com/css?family=Poppins:400,500,600,700,800" rel="stylesheet">
+</head>
+
+<body>
+
+	<!-- header -->
+	<header>
+	<div class="top">
+
+		</div>
+		<div class="container">
+			<nav class="navbar navbar-expand-lg navbar-light">
+				<h1>
+					<a class="navbar-brand text-capitalize" href="index.html">
+					Kannada Text Summarization
+					</a>
+				</h1>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+				    aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+
+				<div class="collapse navbar-collapse" id="navbarSupportedContent">
+					 <ul class="navbar-nav text-center  ml-lg-auto">
+						<li class="nav-item   mr-3">
+							<a class="nav-link" href="{{url_for('index')}}">Home
+								<span class="sr-only">(current)</span>
+							</a>
+						</li>
+						<li class="nav-item mr-3">
+							<a class="nav-link" href="{{url_for('login')}}">Login</a>
+
+						</li>
+						<li class="nav-item active mr-3">
+							<a class="nav-link" href="{{url_for('upload')}}">Upload</a>
+
+						</li>
+
+					</ul>
+				</div>
+			</nav>
+		</div>
+	</header>
+	<!-- //header -->
+	<!-- banner -->
+	<section class="banner-1">
+	</section>
+	<!-- //banner -->
+	<!--/contact-->
+	<section class="contact py-5">
+		<div class="container py-md-4 mt-md-3">
+			 <center><h2>preview<h2></center>
+		  	<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+
+
+  <!-- Custom fonts for this theme -->
+  <link href="../static/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+
+  <!-- Theme CSS -->
+  <link href="../static/css/freelancer.min.css" rel="stylesheet">
+    <style>
+   #loading {
+   background: url('../static/ajax-loader.gif') no-repeat center center;
+   position: absolute;
+   top: 0;
+   left: 99;
+   height: 100%;
+   width: 90%;
+   z-index: 9999999;
+}
+   </style>
+
+
+</head>
+
+<body id="page-top">
+
+  <!-- Navigation -->
+
+
+
+  <!-- Contact Section -->
+  <section class="page-section" id="contact">
+    <div class="container">
+     <br>
+	 <br>
+      <!-- Contact Section Heading -->
+      <h2 class="text-center text-uppercase text-secondary mb-0"> </h2>
+
+      <!-- Icon Divider -->
+      <div class="divider-custom">
+        <div class="divider-custom-line"></div>
+        <div class="divider-custom-icon">
+          <i class="fas fa-star"></i>
+        </div>
+        <div class="divider-custom-line"></div>
+      </div>
+
+      <!-- Contact Section Form -->
+      <div class="row" style="margin-left:-300px">
+        <div class="col-lg-8 mx-auto">
+          <!-- To configure the contact form email address, go to mail/contact_me.php and update the email address in the PHP file on line 19. -->
+    {{ df_view.to_html(classes="table striped",na_rep="-") | safe}}
+        </div>
+
+      </div>
+
+  </section>
+ <div class="form-group" style="padding:0px 250px 10px 40px;height:200px">
+                    <input style="margin-left:300px" type="button" onclick="hideLoader()" class="btn btn-primary" value="Click to Train | Test" />
+					<div id="loading" style="display:None;margin-top:552950px"></div>
+					</div>
+
+
+
+  <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
+  <div class="scroll-to-top d-lg-none position-fixed ">
+    <a class="js-scroll-trigger d-block text-center text-white rounded" href="#page-top">
+      <i class="fa fa-chevron-up"></i>
+    </a>
+  </div>
+
+
+  <!-- Bootstrap core JavaScript -->
+
+
+  <script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js'></script>
+   <script type='text/javascript'>
+
+function hideLoader() {
+$('#loading').show(0).delay(10000).hide(0,function(){
+     alert("Training finished!");
+	 window.location = "{{url_for('summarization')}}";
+   });
+}
+
+
+   </script>
+
+
+</body>
+
+</html>
+ </div>
+
+
+
+
+
+		</div>
+	</section>
+	<!--//contact-->
+<!--footer-->
+	<footer>
+		<div class="container py-md-4 mt-md-3">
+			<div class="row footer-top-w3layouts-agile py-5">
+				<div class="col-lg-3 col-md-6 col-sm-6 footer-grid">
+
+				</div>
+				<div class="col-lg-3 col-md-6 col-sm-6 footer-grid">
+
+				</div>
+				<div class="col-lg-3 col-md-6 col-sm-6 footer-grid">
+
+				</div>
+				<div class="col-lg-3 col-md-6 col-sm-6 footer-grid">
+
+				</div>
+			</div>
+		</div>
+	</footer>
+	<!---->
+
+	<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title">Home Loan</h4>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+		 <div class="agileits-w3layouts-info">
+			<img src="images/g6.jpg" class="img-fluid" alt="" />
+			<p>Duis venenatis, turpis eu bibendum porttitor, sapien quam ultricies tellus, ac rhoncus risus odio eget nunc. Pellentesque ac fermentum diam. Integer eu facilisis nunc, a iaculis felis. Pellentesque pellentesque tempor enim, in dapibus turpis porttitor quis. </p>
+		</div>
+	</div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- //Modal -->
+<!-- js-->
+	<script src="../static/js/jquery-2.2.3.min.js"></script>
+<!-- js-->
+	<!-- Bootstrap Core JavaScript -->
+	<script src="../static/js/bootstrap.js ">
+	</script>
+	<!-- //Bootstrap Core JavaScript -->
+</body>
+</html>

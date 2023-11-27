@@ -1,0 +1,23 @@
+import pandas as pd
+from gensim.models import Word2Vec
+from nltk.tokenize import word_tokenize
+import nltk
+nltk.download('punkt')
+
+# Load your dataset from CSV
+df = pd.read_csv('train.csv', encoding='utf-8')
+
+# Assuming your text data is in a column named 'text'
+sentences = df['headline'].astype(str).tolist()
+
+# Tokenize the sentences into words
+tokenized_sentences = [word_tokenize(sentence.lower()) for sentence in sentences]
+
+# Define the Word2Vec model
+model = Word2Vec(sentences=tokenized_sentences, vector_size=100, window=5, min_count=1, workers=4)
+
+# Train the Word2Vec model
+model.train(tokenized_sentences, total_examples=len(sentences), epochs=10)
+
+# Save the trained Word2Vec model to a file
+model.save("word2vec_model.bin")

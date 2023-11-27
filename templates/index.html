@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="zxx">
+  <head>
+    <title>Kannada Text Summarization</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="utf-8" />
+    <meta
+      name="keywords"
+      content="Kannada Text Summarization"
+    />
+    <script>
+      addEventListener(
+        'load',
+        function () {
+          setTimeout(hideURLbar, 0);
+        },
+        false
+      );
+
+      function hideURLbar() {
+        window.scrollTo(0, 1);
+      }
+    </script>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="../static/css/bootstrap.css" rel="stylesheet" type="text/css" />
+    <link href="../static/css/style.css" rel="stylesheet" type="text/css" />
+    <!-- pop up box -->
+    <link
+      href="../static/css/popuo-box.css"
+      rel="stylesheet"
+      type="text/css"
+      media="all"
+    />
+    <!-- font-awesome icons -->
+    <link href="../static/css/fontawesome-all.min.css" rel="stylesheet" />
+    <!-- //Custom Theme files -->
+    <!-- online fonts -->
+    <!-- titles -->
+    <link
+      href="//fonts.googleapis.com/css?family=Raleway:300,400,500,600,700,800,900"
+      rel="stylesheet"
+    />
+    <!-- body -->
+    <link
+      href="//fonts.googleapis.com/css?family=Poppins:400,500,600,700,800"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <!-- header -->
+    <header>
+      <div class="top"></div>
+      <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light">
+          <h1>
+            <a class="navbar-brand text-capitalize" href="index.html">
+              Kannada Text Summarization
+            </a>
+          </h1>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav text-center ml-lg-auto">
+              <li class="nav-item active mr-3">
+                <a class="nav-link" href="{{url_for('index')}}"
+                  >Home
+                  <span class="sr-only">(current)</span>
+                </a>
+              </li>
+              <li class="nav-item mr-3">
+                <a class="nav-link" href="{{url_for('login')}}">Login</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!-- //header -->
+    <!-- banner -->
+    <section class="banner">
+      <div class="callbacks_container">
+        <ul class="rslides" id="slider3">
+          <li>
+            <div class="slider-info bg3">
+              <div class="banner-text container">
+                <h4 class="movetxt text-left mb-3 agile-title text-capitalize">
+                  Kannada Text Summarization
+                </h4>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <!-- //banner -->
+    <!-- Products -->
+
+    <!--footer-->
+
+    <!---->
+    <div class="copyright py-3">
+      <div class="container">
+        <div class="copyrighttop"></div>
+
+        <div class="clearfix"></div>
+      </div>
+    </div>
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="myModal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="exampleModalCenterTitle"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title">Text Summarization</h4>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="agileits-w3layouts-info">
+              <img src="images/g6.jpg" class="img-fluid" alt="" />
+              <p>
+                Duis venenatis, turpis eu bibendum porttitor, sapien quam
+                ultricies tellus, ac rhoncus risus odio eget nunc. Pellentesque
+                ac fermentum diam. Integer eu facilisis nunc, a iaculis felis.
+                Pellentesque pellentesque tempor enim, in dapibus turpis
+                porttitor quis.
+              </p>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-dismiss="modal"
+            >
+              Close
+            </button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- //Modal -->
+    <!-- js-->
+    <script src="js/jquery-2.2.3.min.js"></script>
+    <!-- js-->
+    <!-- Banner Responsiveslides -->
+    <script src="js/responsiveslides.min.js"></script>
+    <script>
+      // You can also use "$(window).load(function() {"
+      $(function () {
+        // Slideshow 4
+        $('#slider3').responsiveSlides({
+          auto: true,
+          pager: true,
+          nav: false,
+          speed: 500,
+          namespace: 'callbacks',
+          before: function () {
+            $('.events').append('<li>before event fired.</li>');
+          },
+          after: function () {
+            $('.events').append('<li>after event fired.</li>');
+          },
+        });
+      });
+    </script>
+    <!-- // Banner Responsiveslides -->
+    <!-- stats -->
+    <script src="../static/js/jquery.waypoints.min.js"></script>
+    <script src="../static/js/jquery.countup.js"></script>
+    <script>
+      $('.counter').countUp();
+    </script>
+    <!-- //stats -->
+    <!--pop-up-box -->
+    <script src="js/jquery.magnific-popup.js"></script>
+    <script>
+      $(document).ready(function () {
+        $('.popup-with-zoom-anim').magnificPopup({
+          type: 'inline',
+          fixedContentPos: false,
+          fixedBgPos: true,
+          overflowY: 'auto',
+          closeBtnInside: true,
+          preloader: false,
+          midClick: true,
+          removalDelay: 300,
+          mainClass: 'my-mfp-zoom-in',
+        });
+      });
+    </script>
+    <!-- //pop-up-box -->
+    <!-- Bootstrap Core JavaScript -->
+    <script src="../static/js/bootstrap.js "></script>
+    <!-- //Bootstrap Core JavaScript -->
+  </body>
+</html>
