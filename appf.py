@@ -696,7 +696,7 @@ def text_summary():
 
 
 
-if __name__ == "__main__":
+#if __name__ == "__main__":
     # Make sure to load your Word2Vec model before running the app
     # word2vec_model = load_word2vec_model('path/to/your/word2vec/model')
-    app.run(debug=True)
+    #app.run(debug=True)
